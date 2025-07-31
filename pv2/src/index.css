@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@layer base {
+  body {
+    
+  }
+}
+
+/* Definisikan CSS variable */
+:root {
+  --bg-light: #ffffff;
+  --bg-dark: #1f2937;
+}
+
+/* Tambahkan class bgdark dan bglight */
+@layer utilities {
+  .bgdark {
+    background-color: var(--bg-dark);
+color: rgb(243, 243, 243);
+  }
+
+  .bglight {
+    background-color: var(--bg-light);
+    color: rgb(0, 0, 0);
+  }
+}
