@@ -1,7 +1,6 @@
 @import "tailwindcss";
 @layer base {
   body {
-    
   }
 }
 
@@ -15,11 +14,20 @@
 @layer utilities {
   .bgdark {
     background-color: var(--bg-dark);
-color: rgb(243, 243, 243);
+    color: rgb(243, 243, 243);
   }
 
   .bglight {
     background-color: var(--bg-light);
     color: rgb(0, 0, 0);
+  }
+
+  .bglight .btn {
+    background: #25282b;
+    color: #fff;
+  }
+  .bgdark .btn {
+    background: #1e293b;
+    color: #facc15;
   }
 }

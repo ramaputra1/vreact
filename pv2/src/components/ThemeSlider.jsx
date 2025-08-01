@@ -37,7 +37,7 @@ import { Sun, Moon } from "lucide-react";
 export default function ThemeSlider() {
   const [isDark, setIsDark] = useState(false);
 
-    useEffect(() => {
+  useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme === "dark") {
       setIsDark(true);
@@ -52,7 +52,7 @@ export default function ThemeSlider() {
       // root.classList.add("dark");
       body.classList.add("bgdark");
       body.classList.remove("bglight");
-       localStorage.setItem("theme", "dark");
+      localStorage.setItem("theme", "dark");
     } else {
       // root.classList.remove("dark");
       body.classList.add("bglight");
@@ -68,7 +68,7 @@ export default function ThemeSlider() {
   return (
     <button
       onClick={toggleTheme}
-      className={`w-16 h-8 flex items-center px-1 rounded-full border border-gray-400 dark:border-gray-200 transition duration-300 ${
+      className={`w-16 h-8 cursor-pointer flex items-center px-1 rounded-full border border-gray-400 dark:border-gray-200 transition duration-300 ${
         isDark ? "bg-slate-800" : "bg-yellow-300"
       }`}
     >

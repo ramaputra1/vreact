@@ -1,16 +1,35 @@
-import React from 'react'
-import ThemeSlider from './ThemeSlider'
+import React from "react";
+import ThemeSlider from "./ThemeSlider";
+import Button from "./Button";
+import { Download, AtSign } from "lucide-react";
 
 const Navbar = () => {
   return (
-    <div className='navbar flex flex-row-reverse p-5'>
-
-  
-      <div className='navbox theme mr-3 ml-3'>Gml</div>
-          <div className='navbox theme mr-3 ml-3'>Rsm</div>
-            <div className='navbox theme mr-3 ml-3'><ThemeSlider/></div>
+    <div className="navbar flex flex-row-reverse p-5 items-center">
+      <div className="navbox theme mr-3 ml-3">
+        {" "}
+        <Button
+          href="/about"
+          className="flex gap-2 justify-center items-center "
+        >
+          <AtSign size={16} className="text-white" />
+          Rsm
+        </Button>
+      </div>
+      <div className="navbox theme mr-3 ml-3">
+        <Button
+          href="/about"
+          className="flex gap-2 justify-center items-center "
+        >
+          <Download size={16} className="text-white" />
+          Rsm
+        </Button>
+      </div>
+      <div className="navbox theme mr-3 ml-3">
+        <ThemeSlider />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
