@@ -1,10 +1,9 @@
 import React from "react";
-import Line from "./Line";
-// import { Linkedin, Github, Mail } from "lucide-react";
 import { FaLinkedin, FaGithub, FaRegStar } from "react-icons/fa";
 import { AiOutlineMail, AiFillHome } from "react-icons/ai";
 import { GoPersonFill } from "react-icons/go";
 import { SiBookstack } from "react-icons/si";
+import TypingQuotesLoops from "./TypingQuotesLoops";
 
 const Hero = () => {
   return (
@@ -53,6 +52,9 @@ const Hero = () => {
           </p>
           <div className="flex gap-5">
             <FaLinkedin /> <FaGithub /> <AiOutlineMail />
+          </div>
+          <div className=" m-0 h-60  flex items-end">
+            <TypingQuotesLoops />
           </div>
         </div>
       </div>

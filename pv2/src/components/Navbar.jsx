@@ -10,10 +10,10 @@ const Navbar = () => {
         {" "}
         <Button
           href="/about"
-          className="flex gap-2 justify-center items-center "
+          className="flex gap-2 justify-center items-center flex-col"
         >
           <AtSign size={16} className="text-white" />
-          Rsm
+          Resume
         </Button>
       </div>
       <div className="navbox theme mr-3 ml-3">
