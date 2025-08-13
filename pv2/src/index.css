@@ -6,7 +6,7 @@
 
 /* Definisikan CSS variable */
 :root {
-  --bg-light: #ffffff;
+  --bg-light: #f1eaea;
   --bg-dark: #1f2937;
 }
 
@@ -19,7 +19,7 @@
 
   .bglight {
     background-color: var(--bg-light);
-    color: rgb(0, 0, 0);
+    color: rgb(35, 31, 31);
   }
 
   .bglight .btn {

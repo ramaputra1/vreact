@@ -41,7 +41,7 @@ export default function TypingQuotesLoop() {
   }, [displayedText, isDeleting, quoteIndex, speed]);
 
   return (
-    <p className="font-mono text-md  w-80">
+    <p className="font-light text-lg text-md  w-80">
       {displayedText}
       <span className="inline-block w-1 ml-1 bg-black animate-blink">
         &nbsp;

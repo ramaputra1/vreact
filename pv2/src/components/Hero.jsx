@@ -5,6 +5,15 @@ import { GoPersonFill } from "react-icons/go";
 import { SiBookstack } from "react-icons/si";
 import TypingQuotesLoops from "./TypingQuotesLoops";
 
+//
+import { Suspense } from "react";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
+import Pcgaming from "../../public/Pcgaming";
+//
+
+import Heree from "./Heree";
+
 const Hero = () => {
   return (
     <div className="hero flex w-full h-screen">
@@ -33,29 +42,28 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="flex-1 flex items-center  h-full ">
-        <div className="flex flex-col w-[60%] h-[70%] gap-5">
-          <h1>Lore Morem</h1>
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. At, magnam.
-            Ipsum, repellat facilis sint aperiam dicta, nisi maxime dolorum sunt
-            non accusantium rem sit explicabo velit quos assumenda fugiat
-            reiciendis? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Accusantium officiis dicta quae, nam ipsam veniam inventore
-            quibusdam. Sequi placeat nobis deserunt? Modi voluptatibus nostrum
-            saepe aspernatur voluptatem, doloribus odit incidunt! Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Illum eius error
-            maiores voluptatum eligendi nisi, alias dolor tempora soluta. Nam
-            qui repellendus nemo et omnis quo recusandae maiores sed aspernatur.
-            Lorem, ipsum.
-          </p>
-          <div className="flex gap-5">
-            <FaLinkedin /> <FaGithub /> <AiOutlineMail />
+      <div className="flex-1 flex items-end h-full flex-col">
+        <div className=" w-full h-[70%] ">
+          <div className="flex flex-col w-[60%] h-[70%] gap-7 justify-center mt-15">
+            <h1 className="text-8xl font-bold">Rama Putra</h1>
+            <p className="text-2xl font-medium">
+              Enterprise & Full-Stack Developer.
+            </p>
+            <p className="font-light text-xl">
+              Enterprise & Full-Stack Developer who thrives on turning ideas
+              into scalable, efficient solutions. I specialize in building
+              clean, optimized code that not only works great but also keeps
+              budgets lean and performance high.
+            </p>
+            <div className="flex gap-5">
+              <FaLinkedin size={25} /> <FaGithub size={25} />{" "}
+              <AiOutlineMail size={25} />
+            </div>
           </div>
-          <div className=" m-0 h-60  flex items-end">
-            <TypingQuotesLoops />
-          </div>
+        </div>
+        <div className=" w-full h-[70%] relative">
+          {/* <TypingQuotesLoops /> */}
+          <Heree />
         </div>
       </div>
     </div>
