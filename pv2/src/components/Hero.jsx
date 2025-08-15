@@ -42,7 +42,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="flex-1 flex items-end h-full flex-col">
+      <div className="flex-1 flex items-end h-full flex-col ">
         <div className=" w-full h-[70%] ">
           <div className="flex flex-col w-[60%] h-[70%] gap-7 justify-center mt-15">
             <h1 className="text-8xl font-bold">Rama Putra</h1>
@@ -61,11 +61,11 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className=" w-full h-[70%] relative">
-          {/* <TypingQuotesLoops /> */}
-          <Heree />
+        <div className=" w-full h-[30%] ">
+          <TypingQuotesLoops />
         </div>
       </div>
+      <Heree />
     </div>
   );
 };
